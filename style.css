@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url(images/img1.jpg);
+    background-size: cover;
+}
+.container{
+    margin: 3rem 0 3rem 19rem;
+    border: solid 1px black;
+    display: inline-block;
+    padding: 1rem 10rem 1rem 10rem;
+    min-height: 30rem;
+}
+header h1{
+    font-size: 1.5rem;
+    margin: 0 0 1rem 8rem;
+}
+form{
+    display: flex;
+    gap: 0.8rem;
+}
+
+form input{
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 1rem;
+    border: solid 2px black;
+}
+form button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 2rem;
+    height: 1.6rem;
+    cursor: pointer;
+}
+form select{
+    font-weight: bold;
+    padding: 0.2rem;
+}
+/* to do style */
+.todo_container{
+    display: inline-block;
+}
+.todo{
+    /* background-color: red; */
+    border: solid 2px black;
+    border-radius: 1rem;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    padding: 0.5rem;
+    min-width: 10rem;
+}
+.complete_btn{
+    margin: 2px 0 0 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+}
+.complete_btn:hover{
+    background-color: green;
+}
+.trash_btn{
+    margin: 0 0 0 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.trash_btn:hover{
+    background-color: red;
+}
+
+.fa-trash, .fa-thumbtack{
+    pointer-events: none;
+}
+.complited{
+    opacity: 0.5;
+    background-color: green;
+    text-decoration: line-through;
+}
+
